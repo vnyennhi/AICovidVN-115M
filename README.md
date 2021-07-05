@@ -50,12 +50,13 @@ pip install -r requirements.txt
 
 ## 4. Train and predict
 
-Run the "main.py" for all the training and output prediction steps. This should take about 15 minutes to complete 
+Run the "main.py" for all the training and output prediction steps. This should take about 15 minutes to complete.
 ```
 python main.py
 ```
 
 Note: Since I don't keep a separate "environment.yml", you should update the file paths inside the "main.py" file accordingly if you put the metadata and audio files at different locations from those in step 0.
+
 
 
 Part of this code is from https://github.com/cam-mobsys/covid19-sounds-kdd20
