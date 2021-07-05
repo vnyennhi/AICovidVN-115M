@@ -48,7 +48,9 @@ On Windows
 pip install -r requirements.txt
 ```
 
-## 4. Run the "main.py" for all the training and output prediction steps. This should take about 15 minutes to complete 
+## 4. Train and predict
+
+Run the "main.py" for all the training and output prediction steps. This should take about 15 minutes to complete 
 ```
 python main.py
 ```
