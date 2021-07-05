@@ -31,9 +31,9 @@ or
 python3 -m venv env
 ```
 
-## 2. Activate 
+## 2. Activate the virtual environment
 
-On Mac:
+On Mac
 ```
 source env/bin/activate
 ```
