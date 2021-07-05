@@ -55,6 +55,9 @@ Run the "main.py" for all the training and output prediction steps. This should 
 python main.py
 ```
 
+The final submission is the "results.csv" on the root folder. The trained model and feature arrays are in the folder "model".
+
+
 Note: Since I don't keep a separate "environment.yml", you should update the file paths inside the "main.py" file accordingly if you put the metadata and audio files at different locations from those in step 0.
 
 
