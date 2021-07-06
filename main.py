@@ -1,5 +1,7 @@
 # import all dependencies
 from utils import *
+import warnings
+warnings.filterwarnings("ignore")
 
 
 # update file paths accordingly
@@ -16,8 +18,12 @@ train_npy_path = 'model/X_train.npy'
 test_npy_path = 'model/X_test.npy'
 
 
+print("Extracting features for train set")
+
 # extract sound features for train set
 train_sound_features = extract_sound_features(train_metadata, train_dataset_path)
+
+print("Extracting features for test set")
 
 # extract sound features for test set
 test_sound_features = extract_sound_features(test_metadata, test_dataset_path)
@@ -30,6 +36,7 @@ test_metadata_features = extract_metadata_features(test_metadata, encoder_path)
 train = np.concatenate([np.array(train_sound_features), train_metadata_features], axis=1)
 test = np.concatenate([np.array(test_sound_features), test_metadata_features], axis=1)
 
+print("Train model and output prediction")
 
 # train model
 xg = xgb.XGBClassifier(max_depth=7,learning_rate=0.07,
@@ -55,3 +62,5 @@ with open(train_npy_path, 'wb') as f:
     pickle.dump(train, f)
 with open(test_npy_path, 'wb') as f:
     pickle.dump(test, f)
+    
+print("Finished")
