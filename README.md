@@ -16,6 +16,13 @@ Private Test set: https://bit.ly/aicv115m_private_test
 
 Specifically, all the metadata csv files must be in the "metadata" folder. All the audio files must be in the three audio folders accordingly without any subfolder.
 
+```
+train_audio_files_8k
+public_test_audio_files_8k
+private_test_audio_files_8k
+```
+
+
 Please download the vggish model checkpoint file from the Google Drive link below and put it in the "vggish" folder.
 https://drive.google.com/file/d/1D2-mpFV-OSDP_dez5py79Dt80WlmVG4E/view?usp=sharing
 
