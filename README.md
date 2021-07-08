@@ -27,6 +27,12 @@ Please download the vggish model checkpoint file from the Google Drive link belo
 https://drive.google.com/file/d/1D2-mpFV-OSDP_dez5py79Dt80WlmVG4E/view?usp=sharing
 
 
+You can run all steps below, including the train and predict steps for Private Test Set using the shell script:
+
+```
+./run_prediction.sh
+```
+
 Open a terminal/bash/shell in the project root folder and follow the below commands
 
 ## 1. Create a new virtual environment for the project
